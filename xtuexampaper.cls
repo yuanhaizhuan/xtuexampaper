@@ -396,7 +396,7 @@
 	%	\noindent
 	\begin{enumerate}\setcounter{enumi}{\arabic{subsecnumber}}
 		\item #1 
-		\dotfill{}%\hfill  
+		~~\dotfill{}~~%\hfill  
 		(\makebox[10mm][c]{
 			 \ifthenelse{ #2 = 0}{\show{\XSolidBrush}}{\show{\CheckmarkBold}}
 		}) ~

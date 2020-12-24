@@ -382,7 +382,7 @@
 			\end{tabular}
 		}{}
 		\ifthenelse{ #3 = 4}{
-			(A)~#4 \\ (B)~#5 \\ (C)~#5 \\ (D)~#7
+			(A)~#4 \\ (B)~#5 \\ (C)~#6 \\ (D)~#7
 		}{}
 	\end{enumerate}
 	\stepcounter{subsecnumber}	

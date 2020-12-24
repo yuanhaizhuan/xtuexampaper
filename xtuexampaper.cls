@@ -106,12 +106,12 @@
 \newcommand{\zdxbox}{
 \newsavebox{\zdx}%装订线
 \sbox{\zdx}
-{\parbox{30cm}{\centering  ~~~
+{\parbox{30cm}{\centering  ~~~~
 		制卷人（学院、姓名）: \underline{\makebox[60mm][c]{\@school、\@papermaker}}~ 
 		审核人签名: \underline{\makebox[28mm][c]{\@reviewer}}~
 		审核日期: \underline{\makebox[37mm][c]{\@approvaldate}} ~
 		制卷份数: \underline{\makebox[13mm][c]{\@copies}}
-		（编号：\underline{\makebox[16mm][c]{\@serialno}}）\\
+		（编号：\underline{\makebox[17mm][c]{\@serialno}}）\\
 		\vspace{1mm}
 		\dotfill{} 装\dotfill{}订\dotfill{}线\dotfill{} \\
 }}
@@ -350,7 +350,7 @@
 %%========================================================
 \newcommand{\answer}[2]{ 
 	\begin{minipage}[t][#1][t]{0.98\textwidth}
-		\show{{\bfseries 参考答案：} {#2}}
+		\show{{\bfseries 参考答案：\\} {#2}}
 	\end{minipage}
 }
 %%========================================================
@@ -409,5 +409,12 @@
 %%  填空
 %%========================================================
 \renewcommand{\fill}[2]{ \underline{ \makebox[#1][c]{\show{#2}} } }
+
+%%========================================================
+%%  填空
+%%========================================================
+\newcommand{\score}[1]{ ~~ \dotfill{} ~~ {(#1)} \\} 
+
+
 
 

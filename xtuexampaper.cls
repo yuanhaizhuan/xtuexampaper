@@ -372,13 +372,13 @@
 		\item #1 \hfill  (\makebox[10mm][c]{\show{#2}}) ~  \\
 		\ifthenelse{ #3 = 1}{
 			\begin{tabular}
-				{*{4}{@{}p{4.0cm}}}(A)~#4 & (B)~#5 & (C)~#6 & (D)~#7
+				{*{4}{@{}p{0.23\linewidth}}}(A)~#4 & (B)~#5 & (C)~#6 & (D)~#7
 			\end{tabular}			
 		}{}
 		\ifthenelse{ #3 = 2}{
-			\begin{tabular}{*{2}{@{}p{8cm}}}(A)~#4 & (B)~#5
+			\begin{tabular}{*{2}{@{}p{0.46\linewidth}}}(A)~#4 & (B)~#5
 			\end{tabular}\\
-			\begin{tabular}{*{2}{@{}p{8cm}}}(C)~#6 & (D)~#7
+			\begin{tabular}{*{2}{@{}p{0.46\linewidth}}}(C)~#6 & (D)~#7
 			\end{tabular}
 		}{}
 		\ifthenelse{ #3 = 4}{
